@@ -1,0 +1,336 @@
+/*---------------------CLASES GLOBALES---------------------*/
+body{ 
+    background-color: #eef0eb;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 120px 90% 100px;
+    grid-template-areas:" header header" 
+                        " main   aside"
+                        " footer footer";
+}
+
+.segundoBody{ 
+    background-color: #eef0eb;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 980px 100px;
+    grid-template-areas:" header"
+                        " main"
+                        " footer"
+}
+
+header{
+    grid-area: header;
+    text-align: center;
+    color: #153243;
+    background-color: #eef0eb;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.082);
+    text-decoration: none;
+}
+
+header nav a{
+    text-decoration: none;
+    padding: 0% 1%;
+    color: #153243;
+}
+
+header nav a:hover{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.089);
+    padding: 0.5% 1%;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+}
+
+aside{
+    margin: 5%;
+    grid-area: aside;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:#d1d3cd;
+    color: #153243;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
+
+}
+
+footer{
+    grid-area: footer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #eef0eb;
+    color: #153243;
+    box-shadow: 10px -20px 20px 0px rgba(0, 0, 0, 0.048);
+}
+
+.titulo{
+    font-family:'Trebuchet MS';
+    color: #153243;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.descripcion{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0% 5%;
+    color:#153243;
+    text-align: justify;
+}
+
+.btn{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 5% 20%;
+    padding: 10px;
+    text-decoration: none;
+    color: #eef0eb;
+    background-color: #284b63;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn:hover{
+    background-color:#153243;
+}
+
+.grupo__tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.tarjeta:hover{
+    transition: 0.2s;
+    transform: scale(102%);
+}
+
+/*---------------------CLASES PAGINA "INICIO"---------------------*/
+
+.inicio__tarjeta{
+    border-radius: 20px;
+    background-color: #d1d3cd;
+    margin: 3%;
+    height: 70%;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
+}
+
+.inicio__cuadro{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.inicio__puntuacion{
+    margin: 2% 5% ;
+    width: 40%;
+}
+
+.inicio__btn__categoria{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 2% 20%;
+    padding: 10px;
+    text-decoration: none;
+    color: #eef0eb;
+    background-color: #284b63;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio__Buscador{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: solid;
+    border-radius: 10px;
+    color: #F1FAEE;
+    background-color: #153243;
+    font-size: 15px;
+    padding: 5%;
+    width: 80%;
+}
+/*---------------------CLASES PAGINA "VER PUBLICACION"---------------------*/
+.grupo__post{
+    text-align: center;
+    padding: 5%;
+}
+
+.post__cuadro{
+    border-radius: 5%;
+    width: 40%;
+}
+
+.post__puntuacion{
+    margin: 0% 2% 2% 2%;
+    width: 20%;
+}
+
+.postFlex{
+    display: flex;
+}
+
+/*---------------------CLASES PAGINA "DESTACADOS"---------------------*/
+.dest__tarjeta{
+    border-radius: 20px;
+    background-color: #d1d3cd;
+    margin: 3%;
+    height: 55%;
+    width: 400px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
+}
+
+.dest__tarjeta__img{
+    padding-left: 40%;
+    width: 20%;
+    margin: 1%;
+}
+
+.grupo__minifotos{
+    margin: 0%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.minifotos{
+    padding: 2% 1%;
+    width: 35%;
+    height: 25%;
+    border-radius: 20px;
+}
+
+/*---------------------CLASES PAGINA "MAS INFORMACION"---------------------*/
+
+.form__tarjeta{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn__form{
+    height: 50px;
+    width: 120px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: auto 20%;
+    padding: 10px;
+    text-decoration: none;
+    color: #eef0eb;
+    background-color: #284b63;
+    border: solid;
+    border-color: #284b63;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.input{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: solid;
+    border-radius: 10px;
+    color: #F1FAEE;
+    background-color: #153243;
+    font-size: 15px;
+    padding: 20px;
+    margin: 3%;
+    width: 200px;
+    height: 20px;
+}
+
+textarea{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 80%;
+    padding: 1%;
+    border: solid;
+    border-radius: 15px;
+    width: 30px;
+    align-content: center;
+}
+
+.info__grupo__tarjetas{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+/*---------------------CLASES PAGINA "PERFIL"---------------------*/
+
+
+/*---------------------CLASES PAGINA "COMPRADO"---------------------*/
+
+
+/*---------------------CLASES PAGINA "FOOTER"---------------------*/
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:" nompag derechos"
+                        " nompag derechos";
+}
+
+.nombrePag__footer{
+    grid-area: nompag;
+}
+
+.derechos__footer{
+    grid-area: derechos;
+}
+
+
+/*---------------------MOBILE---------------------*/
+
+@media(max-width: 1000px){
+    aside{
+        text-align: center;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
+        height: 70%;
+        width: 90%;
+    }
+    
+    .inicio__btn__categoria{
+        display: none;
+    }
+
+    body{ 
+        grid-template-columns: 100%;
+        grid-template-rows: 120px 10% 80% 5%;
+        grid-template-areas:" header"
+                            " aside"
+                            " main"
+                            " footer"
+    }
+
+    .segundoBody{ 
+        background-color: #eef0eb;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 120px 80% 5%;
+        grid-template-areas:" header"
+                            " main"
+                            " footer"
+    }
+
+    .grupo__tarjetas{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: 10%;
+    }
+
+    .minifotos{
+        width: 120px;
+        height: 110px;
+        border-radius: 20px;
+    }
+}
