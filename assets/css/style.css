@@ -1,5 +1,5 @@
 /*---------------------CLASES GLOBALES---------------------*/
-body{ 
+.body1{ 
     background-color: #eef0eb;
     display: grid;
     grid-template-columns: 80% 20%;
@@ -9,7 +9,7 @@ body{
                         " footer footer";
 }
 
-.segundoBody{ 
+.Body2{ 
     background-color: #eef0eb;
     display: grid;
     grid-template-columns: 100%;
