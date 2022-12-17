@@ -176,9 +176,6 @@ footer{
 .dest__tarjeta{
     border-radius: 20px;
     background-color: #d1d3cd;
-    margin: 3%;
-    height: 55%;
-    width: 400px;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
 }
 
@@ -302,7 +299,7 @@ footer{
         display: none;
     }
 
-    body{ 
+    .Body1{ 
         grid-template-columns: 100%;
         grid-template-rows: 120px 10% 80% 5%;
         grid-template-areas:" header"
@@ -311,7 +308,7 @@ footer{
                             " footer"
     }
 
-    .segundoBody{ 
+    .Body2{ 
         background-color: #eef0eb;
         display: grid;
         grid-template-columns: 100%;
