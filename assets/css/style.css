@@ -13,7 +13,7 @@
     background-color: #eef0eb;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 120px 980px 100px;
+    grid-template-rows: 120px 90% 100px;
     grid-template-areas:" header"
                         " main"
                         " footer"
@@ -104,7 +104,7 @@ footer{
     width: 100%;
 }
 
-.tarjeta:hover{
+.inicio__tarjeta:hover{
     transition: 0.2s;
     transform: scale(102%);
 }
@@ -152,6 +152,13 @@ footer{
     padding: 5%;
     width: 80%;
 }
+
+/*---------------------CLASES PAGINA "COMPRADO"---------------------*/
+.fondo{
+    background-color: chartreuse;
+    height: 1000px;
+}
+
 /*---------------------CLASES PAGINA "VER PUBLICACION"---------------------*/
 .grupo__post{
     text-align: center;
@@ -201,33 +208,14 @@ footer{
 
 /*---------------------CLASES PAGINA "MAS INFORMACION"---------------------*/
 
-.form__tarjeta{
-    display: flex;
-    justify-content: center;
-    width: 60%;
+.info__tarjeta{
+    border-radius: 30px;
+    background-color: #d1d3cd;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.btn__form{
-    height: 50px;
-    width: 120px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    margin: auto 20%;
-    padding: 10px;
-    text-decoration: none;
-    color: #eef0eb;
-    background-color: #284b63;
-    border: solid;
-    border-color: #284b63;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
+.info_icono{
+    height: auto;
+    width: 30%;
 }
 
 .input{
@@ -252,15 +240,6 @@ textarea{
     width: 30px;
     align-content: center;
 }
-
-.info__grupo__tarjetas{
-    margin-top: 3%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-}
-
 /*---------------------CLASES PAGINA "PERFIL"---------------------*/
 
 
