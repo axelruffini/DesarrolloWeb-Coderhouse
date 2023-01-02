@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*---------------------CLASES GLOBALES---------------------*/
+
+.Body1{ 
+    background-color: #eef0eb;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 140px auto 100px;
+    grid-template-areas:" header header" 
+                        " main   aside"
+                        " footer footer";
+}
+
+
+.Body2{ 
+    background-color: #eef0eb;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 140px auto 100px;
+    grid-template-areas:" header"
+                        " main"
+                        " footer"
+}
+
+.colorFondo{
+    background-color: #eef0eb;
+}
+
+
+header{
+    font-family: 'Varela Round', sans-serif;
+    grid-area: header;
+    text-align: center;
+    color: #153243;
+    background-color: #eef0eb;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.082);
+    height: auto;
+}
+
+.cabecera{
+    grid-area: header;
+    padding: 10px;
+    text-align: center;
+    color: #153243;
+    background-color: #eef0eb;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.082);
+    height: 140px;
+}
+
+header nav a{
+    text-decoration: none;
+    padding: 0% 1%;
+    color: #153243;
+}
+
+header nav a:hover{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.089);
+    padding: 0.5% 1%;
+}
+
+main{
+    grid-area: main;
+}
+
+
+footer{
+    text-align: center;
+    height: 100px;
+    grid-area: footer;
+    font-family: 'Varela Round', sans-serif;    
+    background-color:#eef0eb;
+    color: #153243;
+    box-shadow: 10px -20px 20px 0px rgba(0, 0, 0, 0.048);
+}
+
+footer img {
+    padding: 20px 0px 0px 10px;
+    height: 30px;
+}
+
+.titulo{
+    font-family: 'Oleo Script', cursive;
+    color: #153243;
+    text-align: center;
+    margin: 20px 20px;
+    font-size: 40px;
+}
+
+.subtitulo{
+    font-family: 'Oleo Script', cursive;
+    color: #153243;
+    text-align: center;
+    margin: 20px 20px;
+    font-size: 30px;
+}
+
+.descripcion{
+    font-family: 'Varela Round', sans-serif;    margin: 0% 5%;
+    color:#153243;
+    text-align: justify;
+}
+
+.boton{
+    font-family: 'Varela Round', sans-serif;    margin: 0% 5%;
+    text-align: center;
+    margin: 5%;
+    padding: 10px;
+    text-decoration: none;
+    color: #eef0eb;
+    background-color: #284b63;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton:hover{
+    background-color:#153243;
+}
+
+.grupo__tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*---------------------CLASES PAGINA "INICIO"---------------------*/
+
+.inicio__tarjeta{
+    border-radius: 20px;
+    background-color: #d1d3cd;
+    margin: 2%;
+    height: 500px;
+    width: 310px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
+}
+
+.inicio__tarjeta:hover{
+    transition: 0.2s;
+    transform: scale(102%);
+}
+
+
+.inicio__cuadro{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.inicio__puntuacion{
+    margin: 2% 5% ;
+    width: 40%;
+}
+
+.inicio__btn__categoria{
+    font-family: 'Varela Round', sans-serif;    margin: 0% 5%;
+    text-align: center;
+    margin: 2% 20%;
+    padding: 10px;
+    text-decoration: none;
+    color: #eef0eb;
+    background-color: #284b63;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio__Buscador{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: solid;
+    border-color: #153243;
+    border-radius: 500px;
+    color: #F1FAEE;
+    background-color: #153243;
+    font-size: 15px;
+    padding: 5%;
+    width: 70%;
+}
+
+.categorias{
+    margin: 5%;
+    grid-area: aside;
+    background-color:#d1d3cd;
+    border-radius: 20px;
+    text-align: center;
+    height: 40%;
+}
+
+/*---------------------CLASES PAGINA "COMPRADO"---------------------*/
+.fondo{
+    background-color: rgb(52, 133, 76);
+    height: 1000px;
+}
+
+/*---------------------CLASES PAGINA "VER PUBLICACION"---------------------*/
+.grupo__post{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 5%;
+}
+
+.post__cuadro{
+    border-radius: 5%;
+    width: 40%;
+}
+
+.post__puntuacion{
+    margin: 0% 2% 2% 2%;
+    width: 20%;
+}
+
+.postFlex{
+    display: flex;
+}
+
+/*---------------------CLASES PAGINA "DESTACADOS"---------------------*/
+.dest__tarjeta{
+    border-radius: 20px;
+    background-color: #d1d3cd;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
+}
+
+.dest__tarjeta:hover{
+    transition: 0.2s;
+    transform: scale(102%);
+}
+
+.dest__tarjeta__img{
+    padding-left: 40%;
+    width: 20%;
+    margin: 1%;
+}
+
+.grupo__minifotos{
+    margin: 0%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.minifotos{
+    padding: 10px;
+    width: 40%;
+    border-radius: 20px;
+}
+
+/*---------------------CLASES PAGINA "MAS INFORMACION"---------------------*/
+
+.info__tarjeta{
+    border-radius: 30px;
+    background-color: #d1d3cd;
+}
+
+.info_icono{
+    height: auto;
+    width: 30%;
+}
+
+.input{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    border: solid;
+    color: #ffffff;
+    background-color: #153243;
+    font-size: 15px;
+    padding: 20px;
+    margin: 3% 3%;
+    width: 330px;
+    height: 20px;
+}
+
+.input:focus{
+    box-shadow: 0px 0px 15px 0px rgb(0, 162, 255);
+}
+
+textarea{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 80%;
+    padding: 1%;
+    border: solid;
+    border-radius: 15px;
+    width: 30px;
+    align-content: center;
+}
+
+
+.boton__info{
+    font-family: 'Varela Round', sans-serif;    
+    margin: 1%;
+    padding: 15px;
+    border-color: #153243;
+    border-radius: 50px;
+    color: #eef0eb;
+    background-color: #284b63;
+    display: flex;
+    justify-content: center;
+}
+
+.pregunta{
+    margin: 2% 32%;
+    background-color: #c5eaff;
+    border-radius: 50px 50px 5px 50px;
+    padding: 5px 30px;
+    width: 65%;
+}
+
+.respuesta{
+    background-color: blanchedalmond;
+    border-radius: 50px 50px 50px 5px;
+    padding: 5px 30px;
+    width: 65%;
+}
+/*---------------------CLASES PAGINA "PERFIL"---------------------*/
+.grupo__tarjeta__perfil{
+    margin: 2%;
+    width: 1820px;
+    display: flex;
+    justify-content: center;
+}
+
+.perfil__tarjeta{
+    padding: 5%;
+    border-radius: 20px;
+    background-color: #d1d3cd;
+    width: 400px;
+    height: 430px;
+}
+
+
+.boton__perfil{
+    font-family: 'Varela Round', sans-serif;
+    margin: 5% 40%;
+    padding: 15px;
+    border-color: #153243;
+    border-radius: 50px;
+    color: #eef0eb;
+    background-color: #284b63;
+    display: flex;
+    justify-content: center;
+}
+
+/*---------------------CLASES PAGINA "COMPRADO"---------------------*/
+
+/*---------------------MOBILE---------------------*/
+
+@media(max-width: 1000px){
+
+    .categorias{
+        grid-area: aside;
+        margin: 1%;
+        padding: 1px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color:#d1d3cd;
+        border-radius: 30px;
+        text-align: center;
+        height: 100px;
+    }
+
+    .categoriaTexto{
+        font-family: 'Oleo Script', cursive;
+        margin: 1% 8%;
+        color:#153243;
+        text-align: justify;
+        font-size: 25px;
+    }
+
+    .inicio__Buscador{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border: solid;
+        border-color: #153243;
+        border-radius: 50px;
+        color: #F1FAEE;
+        background-color: #153243;
+        font-size: 15px;
+        padding: 15px;
+        width: 85%;
+        height: 5px;
+    }
+    
+    .inicio__btn__categoria{
+        display: none;
+    }
+
+    .Body1{ 
+        grid-template-columns: 100%;
+        grid-template-rows: 120px 5% 100% 5%;
+        grid-template-areas:" header"
+                            " aside"
+                            " main"
+                            " footer"
+    }
+
+    .Body2{ 
+        background-color: #eef0eb;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 120px 80% 5%;
+        grid-template-areas:" header"
+                            " main"
+                            " footer"
+    }
+
+
+    .minifotos{
+        width: 120px;
+        height: 110px;
+        border-radius: 20px;
+    }
+}
+
+
