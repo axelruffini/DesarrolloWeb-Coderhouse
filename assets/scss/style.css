@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 /*---------------------CLASES GLOBALES---------------------*/
 .Body1 {
-  background-color: #eef0eb;
+  background-color: #99ff00;
   display: grid;
   grid-template-columns: 80% 20%;
   grid-template-rows: 140px auto 100px;
@@ -384,4 +384,4 @@ textarea {
     height: 110px;
     border-radius: 20px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
