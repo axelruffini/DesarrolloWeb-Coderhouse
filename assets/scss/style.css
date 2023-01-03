@@ -311,12 +311,20 @@ textarea {
   justify-content: space-around;
 }
 
-.perfil__tarjeta {
+.perfil__tarjetaLogin {
   padding: 5%;
   border-radius: 20px;
   background-color: #d1d3cd;
   width: 400px;
   height: 430px;
+}
+
+.perfil__tarjetaRegis {
+  padding: 5%;
+  border-radius: 20px;
+  background-color: #d1d3cd;
+  width: 400px;
+  height: 630px;
 }
 
 .boton__perfil {
@@ -383,4 +391,4 @@ textarea {
     height: 110px;
     border-radius: 20px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
