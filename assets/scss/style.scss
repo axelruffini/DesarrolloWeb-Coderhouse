@@ -6,13 +6,17 @@
     padding: 0;
 }
 
-$ColorBlanco: #eef0eb;
 $ColorAzul: #153243;
+$ColorBlanco: #eef0eb;
 $ColorGris: #d1d3cd;
+
 /*---------------------CLASES GLOBALES---------------------*/
 
+body{
+    background-color: $ColorBlanco;
+}
+
 .Body1{ 
-    background-color: black;
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 140px auto 100px;
@@ -23,7 +27,6 @@ $ColorGris: #d1d3cd;
 
 
 .Body2{ 
-    background-color: $ColorBlanco;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 140px auto 100px;
@@ -32,11 +35,12 @@ $ColorGris: #d1d3cd;
                         " footer"
 }
 
+
 header{
     font-family: 'Varela Round', sans-serif;
     grid-area: header;
     text-align: center;
-    color: #153243;
+    color: $ColorAzul;
     background-color: $ColorBlanco;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.082);
     height: auto;
@@ -44,8 +48,7 @@ header{
         a{
             text-decoration: none;
             padding: 0% 1%;
-            color: #153243;
-
+            color: $ColorAzul;
             &:hover{
                 border-radius: 10px;
                 background-color: rgba(0, 0, 0, 0.089);
@@ -70,21 +73,20 @@ main{
     grid-area: main;
 }
 
+
 footer{
     text-align: center;
     height: 100px;
     grid-area: footer;
     font-family: 'Varela Round', sans-serif;    
-    background-color: $ColorFondo;
+    background-color: $ColorBlanco;
     color: $ColorAzul;
     box-shadow: 10px -20px 20px 0px rgba(0, 0, 0, 0.048);
-    img {
+    img{
         padding: 20px 0px 0px 10px;
         height: 30px;
     }
 }
-
-
 
 .titulo{
     font-family: 'Oleo Script', cursive;
@@ -134,7 +136,7 @@ footer{
 
 .inicio__tarjeta{
     border-radius: 20px;
-    background-color: $ColorAzul;
+    background-color: $ColorGris;
     margin: 2%;
     height: 500px;
     width: 310px;
@@ -174,7 +176,7 @@ footer{
     border: solid;
     border-color: $ColorAzul;
     border-radius: 500px;
-    color:$ColorBlanco;
+    color: $ColorBlanco;
     background-color: $ColorAzul;
     font-size: 15px;
     padding: 5%;
@@ -184,7 +186,7 @@ footer{
 .categorias{
     margin: 5%;
     grid-area: aside;
-    background-color:#d1d3cd;
+    background-color:$ColorGris;
     border-radius: 20px;
     text-align: center;
     height: 40%;
@@ -192,7 +194,7 @@ footer{
 
 /*---------------------CLASES PAGINA "COMPRADO"---------------------*/
 .fondo{
-    background-color: rgb(140, 233, 168);
+    background-color: rgb(52, 133, 76);
     height: 1000px;
 }
 
@@ -221,13 +223,14 @@ footer{
 /*---------------------CLASES PAGINA "DESTACADOS"---------------------*/
 .dest__tarjeta{
     border-radius: 20px;
-    background-color: $ColorAzul;
+    background-color: $ColorGris;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
     &:hover{
         transition: 0.2s;
         transform: scale(102%);
     }
 }
+
 
 .dest__tarjeta__img{
     padding-left: 40%;
@@ -252,7 +255,7 @@ footer{
 
 .info__tarjeta{
     border-radius: 30px;
-    background-color: #d1d3cd;
+    background-color: $ColorGris;
 }
 
 .info_icono{
@@ -264,18 +267,18 @@ footer{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 10px;
     border: solid;
-    color: #ffffff;
-    background-color: #153243;
+    color: $ColorBlanco;
+    background-color: $ColorAzul;
     font-size: 15px;
     padding: 20px;
     margin: 3% 3%;
     width: 330px;
     height: 20px;
-    &:focus{
-        box-shadow: 0px 0px 15px 0px rgb(0, 162, 255);
-    }
 }
 
+.input:focus{
+    box-shadow: 0px 0px 15px 0px rgb(0, 162, 255);
+}
 
 textarea{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -289,13 +292,13 @@ textarea{
 
 
 .boton__info{
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Varela Round', sans-serif;    
     margin: 1%;
     padding: 15px;
-    border-color: #153243;
+    border-color: $ColorAzul;
     border-radius: 50px;
-    color: #eef0eb;
-    background-color: #284b63;
+    color: $ColorBlanco;
+    background-color: $ColorAzul;
     display: flex;
     justify-content: center;
 }
@@ -309,7 +312,7 @@ textarea{
 }
 
 .respuesta{
-    background-color: blanchedalmond;
+    background-color: rgb(218, 255, 205);
     border-radius: 50px 50px 50px 5px;
     padding: 5px 30px;
     width: 65%;
@@ -324,7 +327,7 @@ textarea{
 .perfil__tarjetaLogin{
     padding: 5%;
     border-radius: 20px;
-    background-color: #d1d3cd;
+    background-color: $ColorGris;
     width: 400px;
     height: 430px;
 }
@@ -332,7 +335,7 @@ textarea{
 .perfil__tarjetaRegis{
     padding: 5%;
     border-radius: 20px;
-    background-color: #d1d3cd;
+    background-color: $ColorGris;
     width: 400px;
     height: 630px;
 }
@@ -344,8 +347,8 @@ textarea{
     padding: 15px;
     border-color: #153243;
     border-radius: 50px;
-    color: #eef0eb;
-    background-color: #284b63;
+    color: $ColorBlanco;
+    background-color: $ColorAzul;
     display: flex;
     justify-content: center;
 }
@@ -361,7 +364,7 @@ textarea{
         margin: 1%;
         padding: 1px;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        background-color:#d1d3cd;
+        background-color: $ColorGris;
         border-radius: 30px;
         text-align: center;
         height: 100px;
@@ -370,7 +373,7 @@ textarea{
     .categoriaTexto{
         font-family: 'Oleo Script', cursive;
         margin: 1% 8%;
-        color:#153243;
+        color: $ColorAzul;
         text-align: justify;
         font-size: 25px;
     }
@@ -378,10 +381,10 @@ textarea{
     .inicio__Buscador{
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         border: solid;
-        border-color: #153243;
+        border-color: $ColorAzul;
         border-radius: 50px;
-        color: #F1FAEE;
-        background-color: #153243;
+        color: $ColorBlanco;
+        background-color: $ColorAzul;
         font-size: 15px;
         padding: 15px;
         width: 85%;
@@ -417,5 +420,3 @@ textarea{
         border-radius: 20px;
     }
 }
-
-
