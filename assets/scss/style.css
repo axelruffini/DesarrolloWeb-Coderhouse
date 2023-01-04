@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /*---------------------CLASES GLOBALES---------------------*/
 .Body1 {
   background-color: #eef0eb;
@@ -17,10 +22,6 @@
   grid-template-areas: " header" " main" " footer";
 }
 
-.colorFondo {
-  background-color: #eef0eb;
-}
-
 header {
   font-family: "Varela Round", sans-serif;
   grid-area: header;
@@ -29,6 +30,16 @@ header {
   background-color: #eef0eb;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.082);
   height: auto;
+}
+header nav a {
+  text-decoration: none;
+  padding: 0% 1%;
+  color: #153243;
+}
+header nav a:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.089);
+  padding: 0.5% 1%;
 }
 
 .cabecera {
@@ -40,18 +51,6 @@ header {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.082);
   height: 140px;
-}
-
-header nav a {
-  text-decoration: none;
-  padding: 0% 1%;
-  color: #153243;
-}
-
-header nav a:hover {
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.089);
-  padding: 0.5% 1%;
 }
 
 main {
@@ -67,7 +66,6 @@ footer {
   color: #153243;
   box-shadow: 10px -20px 20px 0px rgba(0, 0, 0, 0.048);
 }
-
 footer img {
   padding: 20px 0px 0px 10px;
   height: 30px;
@@ -109,7 +107,6 @@ footer img {
   display: flex;
   justify-content: center;
 }
-
 .boton:hover {
   background-color: #153243;
 }
@@ -123,13 +120,12 @@ footer img {
 /*---------------------CLASES PAGINA "INICIO"---------------------*/
 .inicio__tarjeta {
   border-radius: 20px;
-  background-color: #d1d3cd;
+  background-color: #eef0eb;
   margin: 2%;
   height: 500px;
   width: 310px;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
 }
-
 .inicio__tarjeta:hover {
   transition: 0.2s;
   transform: scale(102%);
@@ -214,7 +210,6 @@ footer img {
   background-color: #d1d3cd;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
 }
-
 .dest__tarjeta:hover {
   transition: 0.2s;
   transform: scale(102%);
@@ -262,7 +257,6 @@ footer img {
   width: 330px;
   height: 20px;
 }
-
 .input:focus {
   box-shadow: 0px 0px 15px 0px rgb(0, 162, 255);
 }
@@ -380,7 +374,6 @@ textarea {
     grid-template-areas: " header" " aside" " main" " footer";
   }
   .Body2 {
-    background-color: #eef0eb;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 120px 80% 5%;
@@ -391,4 +384,4 @@ textarea {
     height: 110px;
     border-radius: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+}

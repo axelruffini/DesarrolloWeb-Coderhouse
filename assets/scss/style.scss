@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$ColorBlanco: #eef0eb;
+$ColorAzul: #153243;
+$ColorGris: #d1d3cd;
 /*---------------------CLASES GLOBALES---------------------*/
 
 .Body1{ 
-    background-color: #eef0eb;
+    background-color: black;
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 140px auto 100px;
@@ -15,7 +23,7 @@
 
 
 .Body2{ 
-    background-color: #eef0eb;
+    background-color: $ColorBlanco;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 140px auto 100px;
@@ -24,67 +32,63 @@
                         " footer"
 }
 
-.colorFondo{ 
-    background-color: #eef0eb;
-}
-
-
 header{
     font-family: 'Varela Round', sans-serif;
     grid-area: header;
     text-align: center;
     color: #153243;
-    background-color: #eef0eb;
+    background-color: $ColorBlanco;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.082);
     height: auto;
+    nav{
+        a{
+            text-decoration: none;
+            padding: 0% 1%;
+            color: #153243;
+
+            &:hover{
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.089);
+                padding: 0.5% 1%;
+            }
+        }
+    }
 }
 
 .cabecera{
     grid-area: header;
     padding: 10px;
     text-align: center;
-    color: #153243;
-    background-color: #eef0eb;
+    color: $ColorAzul;
+    background-color: $ColorBlanco;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.082);
     height: 140px;
-}
-
-header nav a{
-    text-decoration: none;
-    padding: 0% 1%;
-    color: #153243;
-}
-
-header nav a:hover{
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.089);
-    padding: 0.5% 1%;
 }
 
 main{
     grid-area: main;
 }
 
-
 footer{
     text-align: center;
     height: 100px;
     grid-area: footer;
     font-family: 'Varela Round', sans-serif;    
-    background-color:#eef0eb;
-    color: #153243;
+    background-color: $ColorFondo;
+    color: $ColorAzul;
     box-shadow: 10px -20px 20px 0px rgba(0, 0, 0, 0.048);
+    img {
+        padding: 20px 0px 0px 10px;
+        height: 30px;
+    }
 }
 
-footer img {
-    padding: 20px 0px 0px 10px;
-    height: 30px;
-}
+
 
 .titulo{
     font-family: 'Oleo Script', cursive;
-    color: #153243;
+    color: $ColorAzul;
     text-align: center;
     margin: 20px 20px;
     font-size: 40px;
@@ -92,7 +96,7 @@ footer img {
 
 .subtitulo{
     font-family: 'Oleo Script', cursive;
-    color: #153243;
+    color: $ColorAzul;
     text-align: center;
     margin: 20px 20px;
     font-size: 30px;
@@ -100,7 +104,7 @@ footer img {
 
 .descripcion{
     font-family: 'Varela Round', sans-serif;    margin: 0% 5%;
-    color:#153243;
+    color: $ColorAzul;
     text-align: justify;
 }
 
@@ -110,15 +114,14 @@ footer img {
     margin: 5%;
     padding: 10px;
     text-decoration: none;
-    color: #eef0eb;
-    background-color: #284b63;
+    color: $ColorBlanco;
+    background-color: $ColorAzul;
     border-radius: 10px;
     display: flex;
     justify-content: center;
-}
-
-.boton:hover{
-    background-color:#153243;
+    &:hover{
+        background-color:$ColorAzul;
+    }
 }
 
 .grupo__tarjetas{
@@ -131,16 +134,15 @@ footer img {
 
 .inicio__tarjeta{
     border-radius: 20px;
-    background-color: #d1d3cd;
+    background-color: $ColorAzul;
     margin: 2%;
     height: 500px;
     width: 310px;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
-}
-
-.inicio__tarjeta:hover{
-    transition: 0.2s;
-    transform: scale(102%);
+    &:hover{
+        transition: 0.2s;
+        transform: scale(102%);
+    }
 }
 
 
@@ -160,8 +162,8 @@ footer img {
     margin: 2% 20%;
     padding: 10px;
     text-decoration: none;
-    color: #eef0eb;
-    background-color: #284b63;
+    color: $ColorBlanco;
+    background-color: $ColorAzul;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -170,10 +172,10 @@ footer img {
 .inicio__Buscador{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: solid;
-    border-color: #153243;
+    border-color: $ColorAzul;
     border-radius: 500px;
-    color: #F1FAEE;
-    background-color: #153243;
+    color:$ColorBlanco;
+    background-color: $ColorAzul;
     font-size: 15px;
     padding: 5%;
     width: 70%;
@@ -190,7 +192,7 @@ footer img {
 
 /*---------------------CLASES PAGINA "COMPRADO"---------------------*/
 .fondo{
-    background-color: rgb(52, 133, 76);
+    background-color: rgb(140, 233, 168);
     height: 1000px;
 }
 
@@ -219,13 +221,12 @@ footer img {
 /*---------------------CLASES PAGINA "DESTACADOS"---------------------*/
 .dest__tarjeta{
     border-radius: 20px;
-    background-color: #d1d3cd;
+    background-color: $ColorAzul;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
-}
-
-.dest__tarjeta:hover{
-    transition: 0.2s;
-    transform: scale(102%);
+    &:hover{
+        transition: 0.2s;
+        transform: scale(102%);
+    }
 }
 
 .dest__tarjeta__img{
@@ -270,11 +271,11 @@ footer img {
     margin: 3% 3%;
     width: 330px;
     height: 20px;
+    &:focus{
+        box-shadow: 0px 0px 15px 0px rgb(0, 162, 255);
+    }
 }
 
-.input:focus{
-    box-shadow: 0px 0px 15px 0px rgb(0, 162, 255);
-}
 
 textarea{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -288,7 +289,7 @@ textarea{
 
 
 .boton__info{
-    font-family: 'Varela Round', sans-serif;    
+    font-family: 'Varela Round', sans-serif;
     margin: 1%;
     padding: 15px;
     border-color: #153243;
@@ -401,7 +402,6 @@ textarea{
     }
 
     .Body2{ 
-        background-color: #eef0eb;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 120px 80% 5%;
