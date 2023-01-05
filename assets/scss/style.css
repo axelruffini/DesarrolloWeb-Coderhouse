@@ -44,17 +44,6 @@ header nav a:hover {
   padding: 0.5% 1%;
 }
 
-.cabecera {
-  grid-area: header;
-  padding: 10px;
-  text-align: center;
-  color: #153243;
-  background-color: #eef0eb;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.082);
-  height: 140px;
-}
-
 main {
   grid-area: main;
 }
@@ -117,6 +106,22 @@ footer img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.input {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  border-radius: 10px;
+  border: solid;
+  color: #eef0eb;
+  background-color: #153243;
+  font-size: 15px;
+  padding: 20px;
+  margin: 3% 3%;
+  width: 330px;
+  height: 20px;
+}
+.input:focus {
+  box-shadow: 0px 0px 15px 0px rgb(0, 162, 255);
 }
 
 /*---------------------CLASES PAGINA "INICIO"---------------------*/
@@ -210,6 +215,10 @@ footer img {
 .dest__tarjeta {
   border-radius: 20px;
   background-color: #d1d3cd;
+  margin: 2%;
+  min-height: 400px;
+  max-height: 400px;
+  width: 310px;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
 }
 .dest__tarjeta:hover {
@@ -217,10 +226,9 @@ footer img {
   transform: scale(102%);
 }
 
-.dest__tarjeta__img {
-  padding-left: 40%;
-  width: 20%;
-  margin: 1%;
+.dest__perfil__img {
+  width: 50%;
+  margin: 0% 10% 10% 10%;
 }
 
 .grupo__minifotos {
@@ -237,17 +245,79 @@ footer img {
 }
 
 /*---------------------CLASES PAGINA "MAS INFORMACION"---------------------*/
-.info__tarjeta {
-  border-radius: 30px;
+.grupo {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+.seccion1 {
+  margin: 2%;
   background-color: #d1d3cd;
+  width: 90%;
+  height: 50%;
+  border-radius: 30px;
+  padding: 1%;
 }
 
-.info_icono {
-  height: auto;
+.seccion2 {
+  margin: 2% 1% 2% 2%;
+  background-color: #d1d3cd;
+  width: 50%;
+  height: 40%;
+  border-radius: 30px;
+  padding: 2%;
+}
+
+.seccion3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2% 1% 2% 2%;
+  background-color: #d1d3cd;
   width: 30%;
+  height: 60%;
+  border-radius: 30px;
+  padding: 2%;
 }
 
-.input {
+.tarjeta__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 3%;
+  background-color: #eef0eb;
+  width: 90%;
+  padding: 5%;
+  color: #eef0eb;
+  border-radius: 30px;
+}
+.tarjeta__redes:hover {
+  box-shadow: 0px 0px 15px 0px rgba(49, 49, 49, 0.596);
+}
+
+.img__icon {
+  height: 70px;
+  width: 70px;
+  margin: 0% 30px;
+}
+
+.input__Info {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  border-radius: 10px;
+  border: solid;
+  color: #eef0eb;
+  background-color: #153243;
+  font-size: 15px;
+  padding: 2%;
+  margin: 1% 5%;
+  width: 70%;
+}
+.input__Info:focus {
+  box-shadow: 0px 0px 15px 0px rgb(0, 162, 255);
+}
+
+.txt__Info {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   border-radius: 10px;
   border: solid;
@@ -255,50 +325,43 @@ footer img {
   background-color: #153243;
   font-size: 15px;
   padding: 20px;
-  margin: 3% 3%;
-  width: 330px;
-  height: 20px;
+  margin: 1% 5%;
+  width: 70%;
+  height: 40px;
 }
-
-.input:focus {
+.txt__Info:focus {
   box-shadow: 0px 0px 15px 0px rgb(0, 162, 255);
 }
 
-textarea {
+.lista__Info {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 80%;
-  padding: 1%;
+  border-radius: 10px;
   border: solid;
-  border-radius: 15px;
-  width: 30px;
-  align-content: center;
-}
-
-.boton__info {
-  font-family: "Varela Round", sans-serif;
-  margin: 1%;
-  padding: 15px;
-  border-color: #153243;
-  border-radius: 50px;
   color: #eef0eb;
   background-color: #153243;
-  display: flex;
-  justify-content: center;
+  font-size: 15px;
+  padding: 20px;
+  margin: 1% 5%;
+  width: 70%;
+  height: 40px;
+}
+.lista__Info:focus {
+  box-shadow: 0px 0px 15px 0px rgb(0, 162, 255);
 }
 
 .pregunta {
-  margin: 2% 32%;
+  margin: 1% 20%;
   background-color: #c5eaff;
   border-radius: 50px 50px 5px 50px;
-  padding: 5px 30px;
-  width: 65%;
+  padding: 20px 30px;
+  width: 70%;
 }
 
 .respuesta {
   background-color: rgb(218, 255, 205);
   border-radius: 50px 50px 50px 5px;
-  padding: 5px 30px;
-  width: 65%;
+  padding: 20px 30px;
+  width: 30%;
 }
 
 /*---------------------CLASES PAGINA "PERFIL"---------------------*/
@@ -373,18 +436,54 @@ textarea {
   }
   .Body1 {
     grid-template-columns: 100%;
-    grid-template-rows: 120px 5% 100% 5%;
+    grid-template-rows: 140px 5% auto 5%;
     grid-template-areas: " header" " aside" " main" " footer";
   }
   .Body2 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 120px 80% 5%;
+    grid-template-rows: 140px auto 5%;
     grid-template-areas: " header" " main" " footer";
   }
   .minifotos {
     width: 120px;
     height: 110px;
     border-radius: 20px;
+  }
+  .pregunta {
+    margin: 1% 10%;
+    background-color: #c5eaff;
+    border-radius: 50px 50px 5px 50px;
+    padding: 20px 30px;
+    width: 70%;
+  }
+  .respuesta {
+    background-color: rgb(218, 255, 205);
+    border-radius: 50px 50px 50px 5px;
+    padding: 20px 30px;
+    width: 60%;
+  }
+  .seccion1 {
+    margin-bottom: 2%;
+    background-color: #d1d3cd;
+    width: 90%;
+    height: 50%;
+    border-radius: 30px;
+    padding: 1%;
+  }
+  .seccion2 {
+    width: 90%;
+    height: 40%;
+  }
+  .seccion3 {
+    width: 90%;
+    height: 40%;
+  }
+  .perfil__tarjetaLogin {
+    width: 300px;
+    height: 430px;
+  }
+  .input {
+    width: 80%;
   }
 }
