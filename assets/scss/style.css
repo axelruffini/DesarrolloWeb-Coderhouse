@@ -213,6 +213,9 @@ footer img {
 
 /*---------------------CLASES PAGINA "DESTACADOS"---------------------*/
 .dest__tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 20px;
   background-color: #d1d3cd;
   margin: 2%;
@@ -227,21 +230,9 @@ footer img {
 }
 
 .dest__perfil__img {
-  width: 50%;
-  margin: 0% 10% 10% 10%;
-}
-
-.grupo__minifotos {
-  margin: 0%;
-  align-content: center;
-  display: flex;
-  justify-content: center;
-}
-
-.minifotos {
-  padding: 10px;
-  width: 40%;
-  border-radius: 20px;
+  height: 155px;
+  width: 155px;
+  margin: 0% 0% 10% 25%;
 }
 
 /*---------------------CLASES PAGINA "MAS INFORMACION"---------------------*/
@@ -376,7 +367,7 @@ footer img {
   border-radius: 20px;
   background-color: #d1d3cd;
   width: 400px;
-  height: 430px;
+  height: 6560%;
 }
 
 .perfil__tarjetaRegis {
