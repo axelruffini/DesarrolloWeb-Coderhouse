@@ -12,6 +12,8 @@ $ColorGris: #d1d3cd;
 
 /*---------------------CLASES GLOBALES---------------------*/
 
+
+
 body{
     background-color: $ColorBlanco;
 }
@@ -34,7 +36,6 @@ body{
                         " main"
                         " footer"
 }
-
 
 header{
     font-family: 'Varela Round', sans-serif;
@@ -210,19 +211,16 @@ footer{
     padding: 5%;
 }
 
+
 .post__cuadro{
-    border-radius: 5%;
-    width: 40%;
+    width: 60%;
 }
 
 .post__puntuacion{
     margin: 0% 2% 2% 2%;
-    width: 20%;
+    width: 10%;
 }
 
-.postFlex{
-    display: flex;
-}
 
 /*---------------------CLASES PAGINA "DESTACADOS"---------------------*/
 .dest__tarjeta{

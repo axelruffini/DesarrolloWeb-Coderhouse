@@ -198,17 +198,12 @@ footer img {
 }
 
 .post__cuadro {
-  border-radius: 5%;
-  width: 40%;
+  width: 60%;
 }
 
 .post__puntuacion {
   margin: 0% 2% 2% 2%;
-  width: 20%;
-}
-
-.postFlex {
-  display: flex;
+  width: 10%;
 }
 
 /*---------------------CLASES PAGINA "DESTACADOS"---------------------*/
