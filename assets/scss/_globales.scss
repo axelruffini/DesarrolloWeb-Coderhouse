@@ -82,20 +82,10 @@ footer{
 }
 
 .boton{
-    font-family: 'Varela Round', sans-serif;    
-    margin: 0% 5%;
-    text-align: center;
+    
+    @extend %botones;
     margin: 5%;
-    padding: 10px;
-    text-decoration: none;
-    color: $ColorBlanco;
-    background-color: $ColorAzul;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    &:hover{
-        background-color:$ColorSeleccion;
-    }
+
 }
 
 .grupo__tarjetas{

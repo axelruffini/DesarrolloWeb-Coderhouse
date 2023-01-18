@@ -13,6 +13,21 @@
   margin: 20px;
 }
 
+.inicio__btn__categoria, .boton {
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #153243;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.inicio__btn__categoria:hover, .boton:hover {
+  background-color: black;
+}
+
 body {
   background-color: rgba(0, 0, 0, 0.031372549);
 }
@@ -84,20 +99,7 @@ footer img {
 }
 
 .boton {
-  font-family: "Varela Round", sans-serif;
-  margin: 0% 5%;
-  text-align: center;
   margin: 5%;
-  padding: 10px;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #153243;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-}
-.boton:hover {
-  background-color: black;
 }
 
 .grupo__tarjetas {
@@ -123,6 +125,28 @@ footer img {
 }
 
 /*--------------------- PAGINA "INICIO" ---------------------*/
+.titulo, .subtitulo {
+  font-family: "Oleo Script", cursive;
+  color: #153243;
+  text-align: center;
+  margin: 20px;
+}
+
+.inicio__btn__categoria, .boton {
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #153243;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.inicio__btn__categoria:hover, .boton:hover {
+  background-color: black;
+}
+
 .inicio__tarjeta {
   border-radius: 20px;
   background-color: #ffffff;
@@ -177,14 +201,7 @@ footer img {
 }
 
 .inicio__btn__categoria {
-  font-family: "Varela Round", sans-serif;
-  margin: 15%;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #153243;
-  border-radius: 10px;
-  text-align: start;
-  display: block;
+  margin: 10% 5%;
 }
 
 /*--------------------- PAGINA "VER PUBLICACION" ---------------------*/

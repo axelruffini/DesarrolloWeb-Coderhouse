@@ -4,3 +4,18 @@
     text-align: center;
     margin: 20px;
 }
+
+%botones{
+    font-family: 'Varela Round', sans-serif;    
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: $ColorBlanco;
+    background-color: $ColorAzul;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    &:hover{
+        background-color:$ColorSeleccion;
+    }
+}

@@ -1,4 +1,6 @@
 
+@import "extend";
+
 .inicio__tarjeta{
     border-radius: 20px;
     background-color: $ColorBlanco;
@@ -58,12 +60,8 @@
 
 
 .inicio__btn__categoria{
-    font-family: 'Varela Round', sans-serif;    
-    margin: 15%;
-    text-decoration: none;
-    color: $ColorBlanco;
-    background-color: $ColorAzul;
-    border-radius: 10px;
-    text-align: start;
-    display: block;
+
+    @extend %botones;
+    margin: 10% 5%;
+
 }
