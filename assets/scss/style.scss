@@ -427,6 +427,10 @@ footer{
 
 @media(max-width: 1000px){
 
+    .imgAdaptable{
+        display: none;
+    }
+
     .categorias{
         grid-area: aside;
         margin: 1%;
