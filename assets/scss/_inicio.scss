@@ -61,7 +61,6 @@
 
 .inicio__btn__categoria{
 
-    @extend %botones;
-    margin: 10% 5%;
+    @include boton (10% 5%);
 
 }

@@ -83,8 +83,7 @@ footer{
 
 .boton{
     
-    @extend %botones;
-    margin: 5%;
+    @include boton (5%);
 
 }
 
