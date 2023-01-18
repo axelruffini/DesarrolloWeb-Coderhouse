@@ -1,0 +1,125 @@
+
+body{
+    background-color: $ColorGris;
+}
+
+.Body1{ 
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 140px auto 100px;
+    grid-template-areas:" header header" 
+                        " main   aside"
+                        " footer footer";
+}
+
+
+.Body2{ 
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 140px auto 100px;
+    grid-template-areas:" header"
+                        " main"
+                        " footer"
+}
+
+header{
+    font-family: 'Varela Round', sans-serif;
+    grid-area: header;
+    text-align: center;
+    background-color: $ColorBlanco;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.082);
+    height: auto;
+    nav{
+        a{
+            text-decoration: none;
+            padding: 0% 1%;
+            color: $ColorAzul;
+            &:hover{
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.089);
+                padding: 0.5% 1%;
+            }
+        }
+    }
+}
+
+main{
+    grid-area: main;
+}
+
+
+footer{
+    text-align: center;
+    height: 100px;
+    grid-area: footer;
+    font-family: 'Varela Round', sans-serif;    
+    background-color: $ColorBlanco;
+    color: $ColorAzul;
+    box-shadow: 10px -20px 20px 0px rgba(0, 0, 0, 0.048);
+    img{
+        padding: 20px 0px 0px 10px;
+        height: 30px;
+    }
+}
+
+.titulo{
+    font-family: 'Oleo Script', cursive;
+    color: $ColorAzul;
+    text-align: center;
+    margin: 20px 20px;
+    font-size: 40px;
+}
+
+.subtitulo{
+    font-family: 'Oleo Script', cursive;
+    color: $ColorAzul;
+    text-align: center;
+    margin: 20px 20px;
+    font-size: 30px;
+}
+
+.descripcion{
+    font-family: 'Varela Round', sans-serif;    
+    margin: 0% 5%;
+    color: $ColorAzul;
+    text-align: justify;
+}
+
+.boton{
+    font-family: 'Varela Round', sans-serif;    
+    margin: 0% 5%;
+    text-align: center;
+    margin: 5%;
+    padding: 10px;
+    text-decoration: none;
+    color: $ColorBlanco;
+    background-color: $ColorAzul;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    &:hover{
+        background-color:$ColorAzul;
+    }
+}
+
+.grupo__tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    border: solid;
+    color: $ColorBlanco;
+    background-color: $ColorAzul;
+    font-size: 15px;
+    padding: 20px;
+    margin: 3% 3%;
+    width: 330px;
+    height: 20px;
+    &:focus{
+        box-shadow: 0px 0px 15px 0px rgb(0, 162, 255);
+    }
+}

@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-/*---------------------CLASES GLOBALES---------------------*/
+/*--------------------- GLOBALES ---------------------*/
 body {
   background-color: rgba(0, 0, 0, 0.031372549);
 }
@@ -123,7 +123,7 @@ footer img {
   box-shadow: 0px 0px 15px 0px rgb(0, 162, 255);
 }
 
-/*---------------------CLASES PAGINA "INICIO"---------------------*/
+/*--------------------- PAGINA "INICIO" ---------------------*/
 .inicio__tarjeta {
   border-radius: 20px;
   background-color: #ffffff;
@@ -188,13 +188,7 @@ footer img {
   display: block;
 }
 
-/*---------------------CLASES PAGINA "COMPRADO"---------------------*/
-.fondo {
-  background-color: rgb(52, 133, 76);
-  height: 1000px;
-}
-
-/*---------------------CLASES PAGINA "VER PUBLICACION"---------------------*/
+/*--------------------- PAGINA "VER PUBLICACION" ---------------------*/
 .grupo__post {
   display: flex;
   flex-wrap: wrap;
@@ -204,15 +198,16 @@ footer img {
 
 .post__cuadro {
   width: 60%;
-  box-shadow: 0px 0px 20px 0px rgba(0, 89, 255, 0.664);
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 0px rgba(249, 148, 7, 0.664);
 }
 
 .post__puntuacion {
-  margin: 0% 2% 2% 2%;
-  width: 10%;
+  margin: 30px 20px 0px 20px;
+  width: 200px;
 }
 
-/*---------------------CLASES PAGINA "DESTACADOS"---------------------*/
+/*--------------------- PAGINA "DESTACADOS" ---------------------*/
 .dest__tarjeta {
   display: flex;
   flex-direction: column;
@@ -236,7 +231,7 @@ footer img {
   margin: 0% 0% 10% 25%;
 }
 
-/*---------------------CLASES PAGINA "MAS INFORMACION"---------------------*/
+/*--------------------- PAGINA "MAS INFORMACION" ---------------------*/
 .grupo {
   display: flex;
   flex-direction: column;
@@ -395,8 +390,13 @@ footer img {
   justify-content: center;
 }
 
-/*---------------------CLASES PAGINA "COMPRADO"---------------------*/
-/*---------------------MOBILE---------------------*/
+/*--------------------- PAGINA "COMPRADO" ---------------------*/
+.fondo {
+  background-color: rgb(52, 133, 76);
+  height: 1000px;
+}
+
+/*--------------------- Responsive ---------------------*/
 @media (max-width: 1000px) {
   .imgAdaptable {
     display: none;
