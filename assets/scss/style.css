@@ -6,6 +6,13 @@
 }
 
 /*--------------------- GLOBALES ---------------------*/
+.subtitulo, .titulo {
+  font-family: "Oleo Script", cursive;
+  color: #153243;
+  text-align: center;
+  margin: 20px;
+}
+
 body {
   background-color: rgba(0, 0, 0, 0.031372549);
 }
@@ -62,18 +69,10 @@ footer img {
 }
 
 .titulo {
-  font-family: "Oleo Script", cursive;
-  color: #153243;
-  text-align: center;
-  margin: 20px 20px;
   font-size: 40px;
 }
 
 .subtitulo {
-  font-family: "Oleo Script", cursive;
-  color: #153243;
-  text-align: center;
-  margin: 20px 20px;
   font-size: 30px;
 }
 
