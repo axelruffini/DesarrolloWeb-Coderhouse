@@ -7,15 +7,15 @@
 }
 
 $ColorAzul: #153243;
-$ColorBlanco: #eef0eb;
-$ColorGris: #d1d3cd;
+$ColorBlanco: #ffffff;
+$ColorGris: #00000008;
 
 /*---------------------CLASES GLOBALES---------------------*/
 
 
 
 body{
-    background-color: $ColorBlanco;
+    background-color: $ColorGris;
 }
 
 .Body1{ 
@@ -41,7 +41,6 @@ header{
     font-family: 'Varela Round', sans-serif;
     grid-area: header;
     text-align: center;
-    color: $ColorAzul;
     background-color: $ColorBlanco;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.082);
     height: auto;
@@ -95,13 +94,15 @@ footer{
 }
 
 .descripcion{
-    font-family: 'Varela Round', sans-serif;    margin: 0% 5%;
+    font-family: 'Varela Round', sans-serif;    
+    margin: 0% 5%;
     color: $ColorAzul;
     text-align: justify;
 }
 
 .boton{
-    font-family: 'Varela Round', sans-serif;    margin: 0% 5%;
+    font-family: 'Varela Round', sans-serif;    
+    margin: 0% 5%;
     text-align: center;
     margin: 5%;
     padding: 10px;
@@ -141,10 +142,11 @@ footer{
 
 .inicio__tarjeta{
     border-radius: 20px;
-    background-color: $ColorGris;
+    background-color: $ColorBlanco;
     margin: 2%;
-    height: 500px;
-    width: 310px;
+    height: 520px;
+    min-height: 520px;
+    width: calc(330px - 10px);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
     &:hover{
         transition: 0.2s;
@@ -163,38 +165,48 @@ footer{
     width: 40%;
 }
 
-.inicio__btn__categoria{
-    font-family: 'Varela Round', sans-serif;    margin: 0% 5%;
-    text-align: center;
-    margin: 2% 20%;
-    padding: 10px;
-    text-decoration: none;
-    color: $ColorBlanco;
-    background-color: $ColorAzul;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-}
 
 .inicio__Buscador{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: solid;
     border-color: $ColorAzul;
     border-radius: 500px;
-    color: $ColorBlanco;
-    background-color: $ColorAzul;
     font-size: 15px;
     padding: 5%;
     width: 70%;
 }
 
+
 .categorias{
     margin: 5%;
+    padding: 7% 2%;
     grid-area: aside;
-    background-color:$ColorGris;
+    background-color: $ColorAzul;
     border-radius: 20px;
     text-align: center;
-    height: 40%;
+    height: calc(600px - 100px);
+
+}
+
+.categoriatexto{
+    display:inline;
+    font-family: 'Oleo Script', cursive;
+    color: $ColorBlanco;
+    text-align: center;
+    margin: 20px 20px;
+    font-size: 30px;
+}
+
+
+.inicio__btn__categoria{
+    font-family: 'Varela Round', sans-serif;    
+    margin: 15%;
+    text-decoration: none;
+    color: $ColorBlanco;
+    background-color: $ColorAzul;
+    border-radius: 10px;
+    text-align: start;
+    display: block;
 }
 
 /*---------------------CLASES PAGINA "COMPRADO"---------------------*/
@@ -230,7 +242,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     border-radius: 20px;
-    background-color: $ColorGris;
+    background-color: $ColorBlanco;
     margin: 2%;
     min-height: 400px;
     max-height: 400px;
@@ -257,22 +269,23 @@ footer{
     margin: 2%;
 }
 
-
 .seccion1{
     margin: 2%;
-    background-color: $ColorGris;
+    background-color: $ColorBlanco;
     width: 90%;
     height: 50%;
     border-radius: 30px;
     padding: 1%;
+    box-shadow: 0px 0px 15px 0px rgba(49, 49, 49, 0.113);
 }
 .seccion2{
     margin: 2% 1% 2% 2%;
-    background-color: $ColorGris;
+    background-color: $ColorBlanco;
     width: 50%;
     height: 40%;
     border-radius: 30px;
     padding: 2%;
+    box-shadow: 0px 0px 15px 0px rgba(49, 49, 49, 0.113);
 }
 
 .seccion3{
@@ -280,11 +293,12 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     margin: 2% 1% 2% 2%;
-    background-color: $ColorGris;
+    background-color: $ColorBlanco;
     width: 30%;
     height: 60%;
     border-radius: 30px;
     padding: 2%;
+    box-shadow: 0px 0px 15px 0px rgba(49, 49, 49, 0.113);
 }
 
 .tarjeta__redes{
@@ -292,13 +306,13 @@ footer{
     flex-direction: row;
     justify-content: start;
     margin: 3%;
-    background-color: $ColorBlanco;
+    background-color: $ColorGris;
     width: 90%;
     padding: 5%;
     color: $ColorBlanco;
-    border-radius: 30px;
+    border-radius: 10px;
     &:hover{
-        box-shadow: 0px 0px 15px 0px rgba(49, 49, 49, 0.596);
+        box-shadow: 0px 0px 15px 0px rgba(49, 49, 49, 0.198);
     }
 
 }
@@ -380,7 +394,8 @@ footer{
 .perfil__tarjetaLogin{
     padding: 5%;
     border-radius: 20px;
-    background-color: $ColorGris;
+    background-color: $ColorBlanco;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.151);
     width: 400px;
     height: 6560%;
 }
@@ -415,29 +430,20 @@ footer{
     .categorias{
         grid-area: aside;
         margin: 1%;
-        padding: 1px;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        background-color: $ColorGris;
-        border-radius: 30px;
+        padding: 5px;
+        background-color: $ColorAzul;
+        border-radius: 40px;
         text-align: center;
         height: 100px;
-    }
-
-    .categoriaTexto{
-        font-family: 'Oleo Script', cursive;
-        margin: 1% 8%;
-        color: $ColorAzul;
-        text-align: justify;
-        font-size: 25px;
     }
 
     .inicio__Buscador{
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         border: solid;
-        border-color: $ColorAzul;
+        border-color: $ColorBlanco;
         border-radius: 50px;
         color: $ColorBlanco;
-        background-color: $ColorAzul;
+        background-color: $ColorBlanco;
         font-size: 15px;
         padding: 15px;
         width: 85%;
