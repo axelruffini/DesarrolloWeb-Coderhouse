@@ -20,14 +20,14 @@ body {
 .Body1 {
   display: grid;
   grid-template-columns: 80% 20%;
-  grid-template-rows: 140px auto 100px;
+  grid-template-rows: 140px auto 140px;
   grid-template-areas: " header header" " main   aside" " footer footer";
 }
 
 .Body2 {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 140px auto 100px;
+  grid-template-rows: 140px auto 140px;
   grid-template-areas: " header" " main" " footer";
 }
 
@@ -38,6 +38,13 @@ header {
   background-color: #ffffff;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.082);
   height: auto;
+}
+header img {
+  position: absolute;
+  top: 20px;
+  left: 2%;
+  height: 100px;
+  width: 100px;
 }
 header nav a {
   text-decoration: none;
@@ -55,17 +62,18 @@ main {
 }
 
 footer {
-  text-align: center;
-  height: 100px;
   grid-area: footer;
+  padding: 15px;
+  justify-content: center;
+  text-align: center;
   font-family: "Varela Round", sans-serif;
-  background-color: #ffffff;
-  color: #153243;
-  box-shadow: 10px -20px 20px 0px rgba(0, 0, 0, 0.048);
+  background-color: #153243;
+  color: #ffffff;
+  opacity: 95%;
 }
 footer img {
-  padding: 20px 0px 0px 10px;
-  height: 30px;
+  height: 50px;
+  width: 50px;
 }
 
 .titulo {
@@ -437,13 +445,13 @@ footer img {
   }
   .Body1 {
     grid-template-columns: 100%;
-    grid-template-rows: 140px 5% auto 5%;
+    grid-template-rows: 140px 5% auto 140px;
     grid-template-areas: " header" " aside" " main" " footer";
   }
   .Body2 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 140px auto 5%;
+    grid-template-rows: 140px auto 140px;
     grid-template-areas: " header" " main" " footer";
   }
   .minifotos {

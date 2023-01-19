@@ -9,7 +9,7 @@ body{
 .Body1{ 
     display: grid;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 140px auto 100px;
+    grid-template-rows: 140px auto 140px;
     grid-template-areas:" header header" 
                         " main   aside"
                         " footer footer";
@@ -19,7 +19,7 @@ body{
 .Body2{ 
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 140px auto 100px;
+    grid-template-rows: 140px auto 140px;
     grid-template-areas:" header"
                         " main"
                         " footer"
@@ -32,6 +32,15 @@ header{
     background-color: $ColorBlanco;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.082);
     height: auto;
+  
+    img{
+            position: absolute;
+            top: 20px;
+            left: 2%;
+            height: 100px;
+            width: 100px;
+    }
+
     nav{
         a{
             text-decoration: none;
@@ -52,18 +61,22 @@ main{
 
 
 footer{
-    text-align: center;
-    height: 100px;
     grid-area: footer;
+
+    padding: 15px;
+    justify-content: center;
+    text-align: center;
     font-family: 'Varela Round', sans-serif;    
-    background-color: $ColorBlanco;
-    color: $ColorAzul;
-    box-shadow: 10px -20px 20px 0px rgba(0, 0, 0, 0.048);
+    background-color: $ColorAzul;
+    color: $ColorBlanco;
+    opacity: 95%;
     img{
-        padding: 20px 0px 0px 10px;
-        height: 30px;
+        height: 50px;
+        width: 50px;
     }
 }
+
+
 
 .titulo{
     @extend %textos;
