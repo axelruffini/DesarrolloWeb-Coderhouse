@@ -45,7 +45,7 @@
     background-color: $ColorAzul;
     border-radius: 20px;
     text-align: center;
-    height: calc(600px - 100px);
+    height: calc(650px - 100px);
 
 }
 
@@ -61,6 +61,18 @@
 
 .inicio__btn__categoria{
 
-    @include boton (10% 5%);
+    font-family: 'Varela Round', sans-serif;    
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: $ColorBlanco;
+    background-color: $ColorAzul;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 10% 5%;
+    &:hover{
+        background-color:$ColorSeleccion;
+    }
 
 }

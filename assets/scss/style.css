@@ -13,21 +13,6 @@
   margin: 20px;
 }
 
-.inicio__btn__categoria, .boton {
-  font-family: "Varela Round", sans-serif;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #153243;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-}
-.inicio__btn__categoria:hover, .boton:hover {
-  background-color: black;
-}
-
 body {
   background-color: rgba(0, 0, 0, 0.031372549);
 }
@@ -99,7 +84,19 @@ footer img {
 }
 
 .boton {
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #153243;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
   margin: 5%;
+}
+.boton:hover {
+  background-color: black;
 }
 
 .grupo__tarjetas {
@@ -130,21 +127,6 @@ footer img {
   color: #153243;
   text-align: center;
   margin: 20px;
-}
-
-.inicio__btn__categoria, .boton {
-  font-family: "Varela Round", sans-serif;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #153243;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-}
-.inicio__btn__categoria:hover, .boton:hover {
-  background-color: black;
 }
 
 .inicio__tarjeta {
@@ -188,7 +170,7 @@ footer img {
   background-color: #153243;
   border-radius: 20px;
   text-align: center;
-  height: 500px;
+  height: 550px;
 }
 
 .categoriatexto {
@@ -201,7 +183,19 @@ footer img {
 }
 
 .inicio__btn__categoria {
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #153243;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
   margin: 10% 5%;
+}
+.inicio__btn__categoria:hover {
+  background-color: black;
 }
 
 /*--------------------- PAGINA "VER PUBLICACION" ---------------------*/
@@ -408,7 +402,7 @@ footer img {
 
 /*--------------------- PAGINA "COMPRADO" ---------------------*/
 .fondo {
-  background-color: rgb(52, 133, 76);
+  background-color: rgba(0, 0, 0, 0.031372549);
   height: 1000px;
 }
 
