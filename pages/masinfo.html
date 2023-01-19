@@ -42,25 +42,25 @@
                     Para cambiar la configuración de privacidad de tu perfil, primero debes iniciar sesión en tu cuenta. Luego, busca una opción de configuración o ajustes
                 </div>
             </div>
-
+ 
 
             <div class="seccion2">
-                <form>
+                <form action="https://formsubmit.co/ruffiniaxel@gmail.com" method="POST">
                     <div>
                         <h2 class="descripcion"> Ingrese su mail</h2>
-                        <input type="text" class="input__Info">
+                        <input type="email" name="mail" required class="input__Info">
                     </div>
                     <div>
                         <h2 class="descripcion"> Ingrese la categoria</h2>
-                        <select name="categorias" id="" class="lista__Info">
-                            <option value="">Reportar error </option>
+                        <select name="categorias" id="ListadoReporte" class="lista__Info">
+                            <option value="" >Reportar error </option>
                             <option value="">Recuperar mi cuenta </option>
                             <option value="">Denunciar imagen </option>
                         </select>
                     </div>
                     <div>
                         <h2 class="descripcion">Ingrese su consulta</h2>
-                        <textarea name="" id="" cols="30" rows="30" class="txt__Info"></textarea>
+                        <textarea name="text" id="textarea"  class="txt__Info" required></textarea>
                     </div>
                     <button type="boton" class="boton__perfil">Enviar consulta</button>
                 </form>
