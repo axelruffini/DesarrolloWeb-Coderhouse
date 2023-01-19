@@ -416,6 +416,9 @@ footer img {
 
 /*--------------------- Responsive ---------------------*/
 @media (max-width: 1000px) {
+  .titulo {
+    font-size: 30px;
+  }
   .imgAdaptable {
     display: none;
   }
