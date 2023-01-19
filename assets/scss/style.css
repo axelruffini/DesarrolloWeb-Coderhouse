@@ -409,11 +409,6 @@ footer img {
 }
 
 /*--------------------- PAGINA "COMPRADO" ---------------------*/
-.fondo {
-  background-color: rgba(0, 0, 0, 0.031372549);
-  height: 1000px;
-}
-
 /*--------------------- Responsive ---------------------*/
 @media (max-width: 1000px) {
   .titulo {
