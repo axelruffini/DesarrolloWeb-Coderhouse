@@ -1,5 +1,6 @@
 
 @import "extend";
+@import "mixin";
 
 .inicio__tarjeta{
     border-radius: 20px;
@@ -61,18 +62,6 @@
 
 .inicio__btn__categoria{
 
-    font-family: 'Varela Round', sans-serif;    
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    color: $ColorBlanco;
-    background-color: $ColorAzul;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    margin: 10% 5%;
-    &:hover{
-        background-color:$ColorSeleccion;
-    }
+    @include botones (10% 5%)
 
 }
